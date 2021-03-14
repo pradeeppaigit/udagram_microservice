@@ -15,7 +15,7 @@ spec:
         service: udagram-api-feed
     spec:
       containers:
-      - image: pradeeppaidock/udagram_api_feed
+      - image: pradeeppaidock/udagram-api-feed
         name: udagram-api-feed
         imagePullPolicy: Always
         resources:
