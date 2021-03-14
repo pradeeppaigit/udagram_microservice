@@ -46,11 +46,11 @@ spec:
             secretKeyRef:
               name: udagram-secret
               key: POSTGRES_DB
-        - name: AWS_BUCKET
+        - name: AWS_MEDIA_BUCKET
           valueFrom:
             secretKeyRef:
               name: udagram-secret
-              key: AWS_BUCKET
+              key: AWS_MEDIA_BUCKET
         - name: AWS_REGION
           valueFrom:
             secretKeyRef:
