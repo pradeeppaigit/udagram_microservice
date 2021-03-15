@@ -6,9 +6,6 @@ metadata:
   name: udagram-api-users
 spec:
   replicas: 2
-  selector:
-    matchLabels:
-      service: udagram-api-users
   template:
     metadata:
       labels:
@@ -46,21 +43,6 @@ spec:
             configMapKeyRef:
               name: env-config
               key: POSTGRES_DB
-        - name: AWS_MEDIA_BUCKET
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: AWS_MEDIA_BUCKET
-        - name: AWS_REGION
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: AWS_REGION
-        - name: AWS_PROFILE
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: AWS_PROFILE
         - name: JWT_SECRET
           valueFrom:
             configMapKeyRef:
@@ -72,7 +54,3 @@ spec:
               name: env-config
               key: URL
       restartPolicy: Always
-      volumes:
-        - name: aws-secret
-          secret:
-            secretName: aws-secret
