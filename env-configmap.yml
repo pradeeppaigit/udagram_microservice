@@ -7,6 +7,6 @@ data:
   JWT_SECRET: hello
   POSTGRES_DB: udagrampaidb
   POSTGRES_HOST: udagrampaidb.cb7zphooz3xh.us-east-1.rds.amazonaws.com
-  URL: http://a973472d7cafd4b7492b21a69f437632-1853692801.us-east-1.elb.amazonaws.com:8100
+  URL: http://a1aba8bfb662f4bfba17eee60584e348-878601353.us-east-1.elb.amazonaws.com:8100
 metadata:
   name: env-config
