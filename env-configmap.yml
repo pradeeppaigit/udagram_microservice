@@ -5,7 +5,7 @@ data:
   AWS_PROFILE: default
   AWS_REGION: us-east-1
   JWT_SECRET: hello
-  POSTGRES_DB: postgres
+  POSTGRES_DB: udagrampaidb
   POSTGRES_HOST: udagrampaidb.cb7zphooz3xh.us-east-1.rds.amazonaws.com
   URL: http://aefcf462b3ca7478c8b4358b22aa1cb9-1789897292.us-east-1.elb.amazonaws.com:8100
 metadata:
